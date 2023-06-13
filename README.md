@@ -1,53 +1,163 @@
-# Deep Learning Model using Convolutional Neural Network (CNN)
+<a name="readme-top"></a>
+[![Contributors](https://shields.io/badge/Contributors-1-green)](https://github.com/oardilac/DeepLearning-CNN-ImageClassification/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/oardilac/DeepLearning-CNN-ImageClassification)](https://github.com/oardilac/DeepLearning-CNN-ImageClassification/network/members)
+[![Stargazers](https://img.shields.io/github/stars/oardilac/DeepLearning-CNN-ImageClassification)](https://github.com/oardilac/DeepLearning-CNN-ImageClassification/stargazers)
+[![Issues](https://img.shields.io/github/issues/oardilac/DeepLearning-CNN-ImageClassification)](https://github.com/oardilac/DeepLearning-CNN-ImageClassification/issues)
+[![MIT License](https://img.shields.io/github/license/oardilac/DeepLearning-CNN-ImageClassification)](https://github.com/oardilac/DeepLearning-CNN-ImageClassification/blob/main/LICENSE)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555)](https://www.linkedin.com/in/oardilac/)
 
-This repository contains a Python script to create a CNN for image classification.
+<br />
+<div align="center">
+    <h3 align="center">Deep Learning with CNN</h3>
 
-## Table of Contents
-- [Data Loading and Exploration](#data-loading-and-exploration)
-- [Data Preparation and Visualization](#data-preparation-and-visualization)
-- [Model Creation and Training](#model-creation-and-training)
-- [Model Evaluation](#model-evaluation)
-- [Model Saving](#model-saving)
+   <p align="center">
+    Deep Learning Model using Convolutional Neural Network (CNN) for Image Classification.
+    <br />
 
-## Data Loading and Exploration
+  <p align="center">
+    <a href="https://github.com/oardilac/DeepLearning-CNN-ImageClassification/"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/oardilac/DeepLearning-CNN-ImageClassification/">View Demo</a>
+    ·
+    <a href="https://github.com/oardilac/DeepLearning-CNN-ImageClassification/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/oardilac/DeepLearning-CNN-ImageClassification/issues">Request Feature</a>
+  </p>
+</div>
 
-The data used is stored in CSV files: 'train.csv' and 'test.csv'. The script loads these files, explores the data briefly, and displays the first few entries of each data set.
 
-## Data Preparation and Visualization
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-The script processes the images and labels from the training data, reshaping the data to the appropriate format and normalizing the pixel values. The images are visualized using matplotlib to ensure the data is loaded and processed correctly.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-## Model Creation and Training
+This project involves the creation of a Convolutional Neural Network (CNN) for image classification using Python. The dataset used is stored in CSV files, and the model built with TensorFlow and Keras libraries. The model's performance is evaluated using different metrics and visualizations. The best performing model is then saved to disk.
 
-The CNN model is built using TensorFlow and Keras. It consists of three convolutional layers each followed by batch normalization and activation functions, max-pooling layers, a flatten layer, a dense layer, a dropout layer, and finally a dense layer for output. The model is wrapped with KerasClassifier for grid search, which is used to find the best hyperparameters for batch size, number of epochs, and optimizer type.
+### Built With
+* [![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+* [![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+* [![Matplotlib](https://img.shields.io/badge/Matplotlib-013243?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
+* [![Scikit-Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+* [![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+* [![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)](https://keras.io/)
 
-## Model Evaluation
+<!-- GETTING STARTED -->
+## Getting Started
 
-Once the best model is selected based on grid search, it's used to make predictions on the test data. It visualizes the model's predictions on the first few test images. It also calculates and displays the test accuracy and loss. Besides, it generates a classification report, confusion matrix, and calculates ROC AUC score for multi-class classification.
+This section explains how to setup and run this project locally. 
 
-## Model Saving
+### Prerequisites
 
-Finally, the best model is saved to disk for later use.
+Ensure that you have the following tools installed on your system:
+* Python 3
+* pip
+* Jupyter Notebook
 
-## Dependencies
+```
+pip install jupyter
+```
 
-The script uses the following Python libraries:
-- numpy
-- pandas
-- matplotlib
-- sklearn
-- tensorflow
+### Installation
 
-## Running the Script
+1. Clone the repo
 
-To run the script, ensure that the above dependencies are installed in your Python environment. The script can be run from the command line using the command `Deep_Learning.ipynb`.
+    ```
+    git clone https://github.com/oardilac/DeepLearning-CNN-ImageClassification.git
+    ```
 
-Before running, ensure that 'train.csv' and 'test.csv' files are available in the same directory as the script or modify the file paths in the script accordingly. After running the script, 'best_model.h5' will be saved in the same directory.
+2. Install Python packages
 
-## Author
+    ```
+    pip install numpy pandas matplotlib scikit-learn scikeras tensorflow seaborn
+    ```
 
-This model was created by [Oliver Ardila](https://github.com/oardilac).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- USAGE EXAMPLES -->
+## Usage
+
+The script in this repository does the following:
+
+1. Loads and explores image data stored in 'train.csv' and 'test.csv'.
+2. Prepares and visualizes the data.
+3. Builds and trains a CNN model using Scikit-learn and Keras.
+4. Evaluates the model's performance.
+5. Saves the model for future use.
+
+You can run the script using Jupyter Notebook.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- ROADMAP -->
+## Roadmap
+See the [open issues](https://github.com/oardilac/DeepLearning-CNN-ImageClassification/issues) for a list of proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
 ## License
+Distributed under the MIT License. See `LICENSE` for more information.
 
-This project is licensed under the [MIT License](LICENSE).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- CONTACT -->
+## Contact
+
+Oliver Ardila - @oardilac - odardilacueto@gmail.com
+
+Project Link: [https://github.com/oardilac/DeepLearning-CNN-ImageClassification](https://github.com/oardilac/DeepLearning-CNN-ImageClassification)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+This project wouldn't be possible without these wonderful libraries and resources:
+
+* [NumPy](https://numpy.org/)
+* [Pandas](https://pandas.pydata.org/)
+* [Matplotlib](https://matplotlib.org/)
+* [Scikit-learn](https://scikit-learn.org/stable/)
+* [SciKeras](https://github.com/adriangb/scikeras)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
